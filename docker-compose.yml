@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  simple-dotnet-runtime:
+    image: xupeiyao/simple-dotnet-runtime:1.0.0
+    build:
+      context: .
+      dockerfile: simple-dotnet-runtime.Dockerfile
+  lightup-jenkins:
+    image: xupeiyao/lightup-jenkins:1.0.1
+    build:
+      context: .
+      dockerfile: lightup-jenkins.Dockerfile
